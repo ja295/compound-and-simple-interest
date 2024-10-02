@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+    double principal;
+    double rate;
+    double Time;
+    double interest;
+    printf("enter principle amount:");
+    scanf("%lf", &principal);
+    
+    printf("\nenter rate of interest:");
+    scanf("%lf", &rate);
+    
+     
+    
+    printf("\nenter Time:");
+    scanf("%lf", &Time);
+    
+    interest=(principal*rate*Time)/100;
+    printf("\ninterest:%.2lf", interest);
+    
+    double compound_interest;
+    
+    compound_interest= principal*pow((1+(rate/100)),Time);
+    printf("\ncompound_interest:%.2lf", compound_interest-principal);
+    
+    
+    
+    return 0;
+}
